@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Nimrods Construction App</title>
+</head>
+<!--This is a basic webapp for making common construction calculations on the go. 
+    The idea is to reduce time wasted on the job calculating different measurments 
+    and providing accuracy that the user may overlook during realtime. Another reason to build this app was to save on costs when building a project budget. 
+
+    App requirments:
+        1. the app must have a simple UI
+        2. the app must provide basic calculations that only need simple input from the user 
+        3. the app must provide the following calculations:
+            a) calculating area of a surface.
+            b) calculating volume of objects.
+            c) Perimeter and Circumference: Calculating the total length of boundaries, 
+               such as the perimeter of a building foundation or the circumference of a circular structure,
+               is crucial for accurate material ordering and planning.
+            d) Material estimation (i.e: the quantity of materials needed for construction, such as bricks, blocks, cement, steel, and lumber.).
+            e)Paint and Coating Coverage: Calculating the amount of paint or coating needed to cover a surface is important for budgeting and reducing waste.
+        4. the app can get the user to login so that in the future they can refer to measurements taken in the past.
+-->
+<body>
+    <h1>ConstructIT/SiteCraft - Name TBD</h1>
+    <header>
+        <h3>ConstructIT is an App that started from an idea to help contrctors <span>and general labourers with making calcuations on the fly. Instead of wasting time, searching for the right formula to calculate measurments on the job, contractors can login to the app and find everything they are looking for in one place.</span></h3>
+    </header>
+    <div>
+        <div>
+            <h4>The app is meant to achieve the following:</h4>
+        </div>
+        <div>
+            <ul>
+                <li>Save users time on the job by simplifying the calculation process and cost estimation for projects.</li>
+                <li>Help users store calcualtions made on the job so that they can be revisited in the future.</li>
+                <li>Share calcuations with vendors, clients and other third parties.</li>
+                <li>Make complicated calculations simple.</li>
+                <li>More features to come.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Area Calculator</h2>
+                <!--here is where the first feature will be, the feature will be an surface area calculator. 
+                this feature will have pop up windows asking the user to input the height and width of the surface area,
+                once the inputs are plugged the app will generate the area of the surface and ask the user to give the area a name
+                (i.e surface area of the floor in an apartment).-->
+                <div>
+                    <label for="width">Width:</label>
+                    <input type="number" id="width" placeholder="Enter width">
+                </div>
+                <div>
+                    <label for="length">Length</label>
+                    <input type="number" id="length" placeholder="Enter length">
+                </div>
+                <div>
+                    <button onclick="calcArea()">Calculate Area</button>
+                </div>
+                <div id="result"></div>
+    
+
+        </div>
+    </div>
+    <script src="calculations.js"></script>
+</body>
+</html>
